@@ -1,39 +1,24 @@
 #include "includes.h"
 
-void mostrarVetor(int *vet, int size) 
+float media (float *vet, int size) 
 {
     int i;
-
-    for (i = 0; i < size; i++)
-    {
-        printf("%i\n", vet[i]);
-    }
-}
-
-float media (char *seqNumeros, char *sep) 
-{
-    float vetNum[strlen(seqNumeros)];
-    printf("strlen(string) = %i\n", (int) strlen(seqNumeros));
-    int i;
-    int vetSize = 0;
     float sum = 0;
 
-    stringToFloatVet(vetNum, &vetSize, seqNumeros, sep);
-
-    for (i = 0; i < vetSize; i++) 
+    for (i = 0; i < size; i++) 
     {
-        sum += vetNum[i];
+        sum += vet[i];
     }
 
-    return sum / vetSize;
+    return sum / size;
 }
 
-float mediana (char *seqNumeros)
+float mediana (float *vet, int size)
 {
 
 }
 
-float moda (char *seqNumeros)
+float moda (float *vet, int size)
 {
 
 }
