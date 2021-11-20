@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
+#include "output.h"
 #include "converters.h"
 #include "statistic.h"
 

@@ -1,0 +1,9 @@
+# Compiled source
+#################
+*.exe
+*.o
+*.~
+
+# Only for this repository
+#################
+*.c
